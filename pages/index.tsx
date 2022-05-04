@@ -151,7 +151,7 @@ export default function Form(props) {
                 transition={{ duration: [2.5] }}
                 initial={  { opacity:0}}
                 animate={{ y:[220, 200,200,200, 200, 0], opacity:[0,1,1,1,1,1] }}
-                className=' text-[2rem]  md:text-[50px] font-semibold md:font-bold text-green ' >How earlier have you been on <span className=' text-gray-800 dark:text-gray-400 '>GitHub?</span></motion.h1>
+                className=' text-[2rem]  md:text-[50px] font-semibold md:font-bold text-green ' >What's your GH user number <span className=' text-gray-800 dark:text-gray-400 '>GitHub?</span></motion.h1>
                 <motion.h1
                 transition={{ duration: [3.5], delay:2.5 }}
                 initial={  { opacity:0} }
@@ -180,6 +180,7 @@ export default function Form(props) {
                     className=' flex '  >
                         <input
                         id="login" onChange={updateFormVariables(setFormVariables, ["login"], (value) => value)} 
+                        placeholder='ex. pachicodes'
                         type="text" className=' bg-gray-200 text-gray-500 outline-green rounded-[4px] mr-[10px]  pl-[8px] pr-[8px] pt-[5px] pb-[5px] ' />
                         <div onClick={onSubmissionHandler} className=' flex justify-center items-center bg-green text-[1.5] cursor-pointer hover:bg-gray-600 transition duration-500 ease-in-out md:text-[20px]  pl-[8px] pr-[8px] pt-[2px] pb-[2px] font-bold text-white rounded-[4px]' >
                             <FontAwesomeIcon icon={faMagnifyingGlass} className="text-[16px]" />
