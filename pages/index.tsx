@@ -220,7 +220,7 @@ export default function Form(props) {
   )
 }
 
-export async function getServerSideProps(context) {
+/*export async function getServerSideProps(context) {
   const siteId = process.env.SITE_ID;
   if (!siteId) {
     throw new Error("SITE_ID environment variable is not set. Be sure to run `netlify link` before `netlify dev`");
@@ -232,7 +232,7 @@ export async function getServerSideProps(context) {
       siteId: siteId
     }
   }
-}
+}*/
 
 const updateFormVariables = (setFormVariables, path, coerce) => {
   const setIn = (object, path, value) => {
